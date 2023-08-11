@@ -4,7 +4,7 @@
 Teniendo en cuenta la Base de Datos de Northwind, realizar las siguientes tareas:
 
 ### 1. Restaurar la base de datos en SQL Server Express. (Northwind.bak)
-![Restaurar]([url completa de la imagen](https://github.com/SebastianHerrera549/ISI_CRUD/blob/main/ISI_CRUD/IMG/1.jpeg))
+![Restaurar](https://github.com/SebastianHerrera549/ISI_CRUD/blob/main/ISI_CRUD/IMG/1.jpeg))
 
 ### 2. Crear una pequeña aplicación Web (.Net Core o Blazor Web Assembly) en Visual Studio .NET o VSCode que cumpla con los siguientes requisitos:
   - Cree una página que permita administrar la información de la tabla de productos:
