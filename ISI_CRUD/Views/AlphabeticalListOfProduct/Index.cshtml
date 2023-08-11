@@ -1,0 +1,67 @@
+﻿@model IEnumerable<ISI_CRUD.Models.AlphabeticalListOfProduct>
+
+
+@{
+    ViewData["Title"] = "Alphabetical";
+}
+
+<h1>
+    Listado alfabético de productos
+</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Product Id</th>
+            <th>Product Name</th>
+            <th>Supplier Id</th>
+            <th>Category Id</th>
+            <th>Quantity Per Unit</th>
+            <th>Unit Price</th>
+            <th>Units In Stock</th>
+            <th>Units On Order</th>
+            <th>Reorder Level</th>
+            <th>Discontinued</th>
+            <th>CategoryName</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SupplierId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CategoryId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.QuantityPerUnit)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UnitPrice)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UnitsInStock)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UnitsOnOrder)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReorderLevel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Discontinued)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CategoryName)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

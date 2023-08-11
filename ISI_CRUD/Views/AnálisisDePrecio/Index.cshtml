@@ -1,0 +1,31 @@
+﻿@model IEnumerable<ISI_CRUD.Models.AnálisisDePrecio>
+
+
+@{
+    ViewData["Title"] = "AnálisisDePrecio";
+}
+
+<h1>
+    Análisis de precio
+</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre De lProducto</th>
+            <th>Precio Unitario</th>
+            <th>Precio Promedio De Todos Los Productos</th>
+            <th>Diferencia Entre El Precio Promedio Y El Precio De lProducto</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.NombreDelProducto</td>
+                <td>@item.PrecioUnitario</td>
+                <td>@item.PrecioPromedioDeTodosLosProductos</td>
+                <td>@item.DiferenciaEntreElPrecioPromedioYElPrecioDelProducto</td>
+            </tr>
+        }
+    </tbody>
+</table>
